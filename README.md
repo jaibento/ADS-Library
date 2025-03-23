@@ -37,7 +37,6 @@ Descrição sucinta das funcionalidades de cada tela:
 - **Tela de Empréstimos**: Mostra os empréstimos em aberto e concluídos.
 - **Tela de Cadastro de Usuário**: Permite a inserção de informações dos leitores.
 - **Tela de Cadastro de Livro**: Adiciona novos livros ao sistema.
-- **Tela de Notícias Literárias**: Seção dedicada às novidades do mundo da literatura.
 
 #### c) Fluxo de Navegação
 
