@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>ADS LIBRARY - Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" rel="stylesheet">
+  <link href="./css/main.css" rel="stylesheet">
+</head>
+<body>
+  <div class="v7_22">
+    <span class="v1_42">Seja Bem-Vindo ao ADS LIBRARY</span>
+    <div class="login-container">
+      <div class="v16_2">
+        <div class="v1_26"></div>
+        <div class="v1_35">
+          <div class="v1_34">
+            <span class="v1_27">LOGIN</span>
+            <div class="v1_39">
+              <div class="v1_28">
+                <input type="text" placeholder="Digite seu Usuário" class="v1_37">
+              </div>
+              <div class="v1_29">
+                <input type="text" placeholder="Digite sua Senha" class="v1_36">
+              </div>
+            </div>
+            <div class="v1_30" id="loginButton">
+              <span class="v1_33">Login</span>
+            </div>
+            <span class="v1_38" id="forgotPassword">Esqueceu sua Senha?</span>
+            <!-- Adicionando a div para mensagem de erro -->
+            <div id="errorMessage" class="error-message">
+              Sistema de recuperação de senha indisponível no momento. Por favor, contate o administrador.
+            </div>
+            <!-- Link para cadastro de usuário -->
+            <div class="register-link">
+              <a href="../Cadastro de Cliente/index.html">Novo por aqui? Cadastre-se</a>
+            </div>
+          </div>
+        </div>
+        <div class="v1_52"></div>
+      </div>
+    </div>
+    <div class="v109_58"></div>
+  </div>
+
+  <!-- Adicionando o JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const forgotPasswordLink = document.getElementById('forgotPassword');
+      const errorMessage = document.getElementById('errorMessage');
+      const loginButton = document.getElementById('loginButton');
+      
+      // Esconde a mensagem de erro inicialmente
+      errorMessage.style.display = 'none';
+      
+      // Adiciona evento de clique ao link "Esqueceu sua Senha?"
+      forgotPasswordLink.addEventListener('click', function() {
+        // Exibe a mensagem de erro
+        errorMessage.style.display = 'block';
+        
+        // Adiciona classe para animar a entrada da mensagem
+        errorMessage.classList.add('show-error');
+        
+        // Esconde a mensagem após 5 segundos
+        setTimeout(function() {
+          errorMessage.classList.remove('show-error');
+          setTimeout(function() {
+            errorMessage.style.display = 'none';
+          }, 500);
+        }, 5000);
+      });
+      
+      // Adiciona evento de clique ao botão de login
+      loginButton.addEventListener('click', function() {
+        // Redireciona para a página Home após login
+        window.location.href = '../Tela Home/index.html';
+      });
+    });
+  </script>
+</body>
+</html>
