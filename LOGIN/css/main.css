@@ -1,0 +1,408 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.v7_22 {
+  width: 100%;
+  height: 100vh;
+  background: url("../images/v7_22.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.v1_42 {
+  width: 100%;
+  max-width: 725px;
+  color: rgba(250,250,250,1);
+  margin-top: 15vh; /* Aumentado para deixar espaço para a imagem acima */
+  opacity: 1;
+  text-align: center;
+  font-size: 2.5em; /* Usando em para permitir que escale com zoom */
+  /* Adicionada sombra de texto para melhorar legibilidade */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 
+              -2px -2px 4px rgba(0, 0, 0, 0.8), 
+              2px -2px 4px rgba(0, 0, 0, 0.8), 
+              -2px 2px 4px rgba(0, 0, 0, 0.8);
+  font-weight: 600; /* Aumentado para melhorar legibilidade */
+}
+
+/* Container adicionado para o login */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 5vh;
+}
+
+.v16_2 {
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  aspect-ratio: 500 / 585; /* Mantém proporção original */
+  background: url("../images/v16_2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  overflow: hidden;
+}
+.v1_26 {
+  width: 100%;
+  height: 100%;
+  background: rgba(250,250,250,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.v1_35 {
+  width: 60%;
+  height: auto;
+  background: url("../images/v1_35.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  overflow: hidden;
+}
+.v1_34 {
+  width: 100%;
+  height: auto;
+  background: url("../images/v1_34.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.v1_27 {
+  width: 100%;
+  color: rgba(24,24,24,1);
+  position: relative;
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 800; /* ExtraBold */
+  font-size: 2em; /* Usando em para permitir que escale com zoom */
+  opacity: 1;
+  margin-bottom: 1em;
+  margin-top: 2em; /* Adicionado para abaixar o título LOGIN */
+}
+.v1_39 {
+  width: 100%;
+  height: auto;
+  background: url("../images/v1_39.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+.v1_30 {
+  width: 100%;
+  height: 3em; /* Altura relativa à fonte */
+  background: rgba(24,82,199,1);
+  opacity: 1;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Adicionado para movimento */
+}
+/* Adicionado para dar movimento ao botão de login */
+.v1_30:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.v1_30:active {
+  transform: translateY(1px);
+}
+
+.v1_28 {
+  width: 100%;
+  height: 3em; /* Altura relativa à fonte */
+  background: rgba(250,250,250,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border: 1px solid rgba(24,24,24,1);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease; /* Adicionado para movimento */
+}
+/* Adicionado para dar movimento ao campo de usuário */
+.v1_28:focus-within {
+  border-color: rgba(24,82,199,1);
+  box-shadow: 0 0 5px rgba(24,82,199,0.5);
+}
+
+.v1_37 {
+  width: 100%;
+  height: 100%;
+  color: rgba(175,173,173,1);
+  font-family: Montserrat;
+  font-weight: 400; /* Regular */
+  font-size: 1em; /* Usando em para permitir que escale com zoom */
+  opacity: 1;
+  text-align: left;
+  border: none;
+  background: transparent;
+  outline: none;
+  padding-left: 5%;
+  transition: all 0.2s ease; /* Adicionado para movimento */
+}
+.v1_29 {
+  width: 100%;
+  height: 3em; /* Altura relativa à fonte */
+  background: rgba(250,250,250,1);
+  opacity: 1;
+  position: relative;
+  border: 1px solid rgba(24,24,24,1);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease; /* Adicionado para movimento */
+}
+/* Adicionado para dar movimento ao campo de senha */
+.v1_29:focus-within {
+  border-color: rgba(24,82,199,1);
+  box-shadow: 0 0 5px rgba(24,82,199,0.5);
+}
+
+.v1_36 {
+  width: 100%;
+  height: 100%;
+  color: rgba(175,173,173,1);
+  font-family: Montserrat;
+  font-weight: 400; /* Regular */
+  font-size: 1em; /* Usando em para permitir que escale com zoom */
+  opacity: 1;
+  text-align: left;
+  border: none;
+  background: transparent;
+  outline: none;
+  padding-left: 5%;
+  transition: all 0.2s ease; /* Adicionado para movimento */
+}
+.v1_33 {
+  width: 100%;
+  color: rgba(255,255,255,1);
+  position: relative;
+  font-family: Montserrat;
+  font-weight: 500; /* Medium */
+  font-size: 1.5em; /* Usando em para permitir que escale com zoom */
+  opacity: 1;
+  text-align: center;
+}
+.v1_38 {
+  width: auto;
+  color: rgba(0,0,0,1);
+  position: relative;
+  font-family: Montserrat;
+  font-weight: 300; /* Light */
+  font-size: 1em; /* Usando em para permitir que escale com zoom */
+  opacity: 1;
+  text-align: center;
+  margin-top: 1em; /* Ajustado para ficar mais próximo do botão de login */
+  cursor: pointer;
+  transition: color 0.2s ease; /* Adicionado para movimento */
+}
+/* Adicionado para dar movimento ao texto de esqueceu senha */
+.v1_38:hover {
+  color: rgba(24,82,199,1);
+  text-decoration: underline;
+}
+
+/* Estilo para a mensagem de erro */
+.error-message {
+  width: 100%;
+  max-width: 300px;
+  background-color: rgba(255, 0, 0, 0.1);
+  color: #d9534f;
+  border: 1px solid #d9534f;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.9em;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+.show-error {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.v1_52 {
+  width: 75px;
+  height: 75px;
+  background-image: url("../images/v8.png");
+  background-size: contain; /* Mantém a proporção */
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  position: absolute;
+  top: 10%;
+  left: 42.5%;
+}
+
+.v109_58 {
+  width: 96px;
+  height: 96px;
+  background: url("../images/v109_58.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%); /* Centralizado horizontalmente */
+  overflow: hidden;
+  /* Adicionada sombra para a imagem */
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.8));
+  /* Adiciona um brilho sutil ao redor da imagem */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  border-radius: 50%; /* Opcional: se a imagem for redonda */
+}
+
+/* Media queries para ajustes específicos */
+@media screen and (max-width: 768px) {
+  .v1_42 {
+    margin-top: 18vh; /* Aumentado para dar mais espaço à imagem acima */
+    font-size: 2em;
+  }
+  
+  .login-container {
+    margin-top: 2vh;
+  }
+  
+  .v109_58 {
+    width: 80px;
+    height: 80px;
+    top: 5%;
+  }
+  
+  .v1_27 {
+    font-size: 1.8em;
+    margin-top: 1.5em;
+  }
+  
+  .v1_33 {
+    font-size: 1.3em;
+  }
+  
+  .v1_37, .v1_36 {
+    font-size: 0.9em;
+  }
+  
+  .v1_52 {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .error-message {
+    max-width: 250px;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .v1_42 {
+    margin-top: 15vh;
+    font-size: 1.5em;
+  }
+  
+  .v1_27 {
+    font-size: 1.5em;
+    margin-top: 1em;
+  }
+  
+  .v1_35 {
+    width: 80%;
+    left: 10%;
+  }
+  
+  .v1_37, .v1_36 {
+    font-size: 0.8em;
+  }
+  
+  .v1_33 {
+    font-size: 1.2em;
+  }
+  
+  .v1_38 {
+    font-size: 0.8em;
+  }
+  
+  .v1_52 {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .v109_58 {
+    width: 60px;
+    height: 60px;
+    top: 3%;
+  }
+  
+  .error-message {
+    max-width: 200px;
+    font-size: 0.7em;
+    padding: 8px;
+  }
+}
