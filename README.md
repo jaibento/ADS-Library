@@ -7,6 +7,9 @@ Criação de um sistema para bibliotecas pelo curso de Análise e Desenvolviment
 
 - **Jaine Bento dos Santos** - Matrícula: 2023009646
 - **Emivaldo Palácio da Cruz de Sousa** - Matrícula: 2023009575
+- **David Roger Sombra Forte** - Matrícula: 2023009566
+- **Guilherme Morais Vasques** - Matrícula: 2023011985
+
 
 
 ## Entregável Parcial 1 (EP1) - Relatório
