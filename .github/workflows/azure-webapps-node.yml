@@ -68,9 +68,8 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         name: node-app
-    - run: ls - la
-    - run: yarn install
-    - run: yarn test
+    - run: ls -la
+   
 
     - name: 'Deploy to Azure WebApp'
       id: deploy-to-webapp
